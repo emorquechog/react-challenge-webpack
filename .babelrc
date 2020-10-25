@@ -1,0 +1,34 @@
+{
+    "presets": [
+        "@babel/typescript",
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": 3
+            },
+            "@babel/preset-react"
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-transform-async-to-generator",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-transform-react-jsx",
+        "@babel/plugin-transform-regenerator",
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "src"
+                ],
+                "alias": {
+                    "images": "./src/assets/images",
+                    "reducers": "./src/services/reducers",
+                    "actions": "./src/services/actions"
+                }
+            }
+        ]
+    ]
+}

@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: auto;
+  margin-left: 22px;
+  background-color: lightgray;
+  margin-top: 16px;
+  font-size: 12px;
+  div:first-of-type {
+    width: auto;
+    min-height: 60px;
+  }
+
+  div:last-child {
+    height: 105px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    span {
+      padding-top: 5px;
+      text-align: center;
+    }
+    div {
+      display: flex;
+      flex-flow: row;
+    }
+  }
+}

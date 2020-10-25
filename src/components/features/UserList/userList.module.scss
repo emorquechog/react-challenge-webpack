@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  .addButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsteelblue;
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    right: 20%;
+    cursor: pointer;
+  }
+}
+
+.alignInputs {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  div {
+    padding-left: 5px;
+  }
+}
