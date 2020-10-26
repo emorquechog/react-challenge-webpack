@@ -9,12 +9,12 @@ import Dialog from '@material-ui/core/Dialog'
 import { IUser } from 'store/users/models'
 import styles from '../userList.module.scss'
 
-interface AddUser {
+interface IAddUser {
     openDialog: boolean
     onCloseDialog: (open: boolean) => void
     onAcceptPromp: (user: IUser) => void
 }
-const AddUser: React.FC<AddUser> = ({
+const AddUser: React.FC<IAddUser> = ({
     openDialog,
     onCloseDialog,
     onAcceptPromp

@@ -9,13 +9,13 @@ import Dialog from '@material-ui/core/Dialog'
 import { IUser } from 'store/users/models'
 import styles from '../userList.module.scss'
 
-interface EditUser {
+interface IEditUser {
     openDialog: boolean
     onCloseDialog: () => void
     onAcceptPromp: (user: IUser) => void
     user: IUser
 }
-const EditUser: React.FC<EditUser> = ({
+const EditUser: React.FC<IEditUser> = ({
     openDialog,
     onCloseDialog,
     onAcceptPromp,
